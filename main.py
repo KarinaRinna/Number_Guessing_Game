@@ -9,11 +9,12 @@ if top_of_range.isdigit():  # Функция String isdigit() в Python возв
     if top_of_range <= 0:   # если было ввведено число то проверяем больше ли оно 0
         print('Введите число больше нуля')
         quit()  # выход из программы
-else:
+else:  # если же было введено не число
     print('Введите цифру в следующий раз')
     quit()  # выход из программы
 
-random_number = random.randint(11)
+random_number = random.randint(0, top_of_range) # диапозон от 0 до числа которое названо
+print(random_number)
 
 
 
